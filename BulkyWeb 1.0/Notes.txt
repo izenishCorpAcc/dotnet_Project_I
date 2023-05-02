@@ -1,0 +1,30 @@
+Controller naming convention 
+View+Controller(keyword)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+	Default esma herne
+
+---------------------------------------------------------------------------------------------------------------------------------------------------	
+	
+Inside a controller:
+
+public IActionResult Index()
+        {
+
+            return View(); //If define garena i.e return View() vane default or action name ma janxa i.e Index
+            //return View("Index"); //If define garena i.e return View() vane default or action name ma janxa i.e Index
+
+        }
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+/shared/_Layout
+is the master page 
+And @RenderBody() will load all the views
+Header and Footer esmai define garne ho
+

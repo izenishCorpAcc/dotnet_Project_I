@@ -16,7 +16,8 @@ namespace BulkyWeb_1._0.Controllers
         public IActionResult Index()
         {
 
-            return View("Index"); //If define garena i.e return View() vane default or action name ma janxa i.e Index
+            return View(); //If define garena i.e return View() vane default or action name ma janxa i.e Index
+            //return View("Index"); //If define garena i.e return View() vane default or action name ma janxa i.e Index
 
         }
 
