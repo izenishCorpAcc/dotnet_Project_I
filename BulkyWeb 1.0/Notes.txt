@@ -27,4 +27,14 @@ public IActionResult Index()
 is the master page 
 And @RenderBody() will load all the views
 Header and Footer esmai define garne ho
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Inside Model:
+the table will automatically be created
+to define a field as a primary key we need to put the [Key] as annotation
 
+
+
+In nuget manager:
+ add-migration AddQuestionsTable
+ update-database
+ 
