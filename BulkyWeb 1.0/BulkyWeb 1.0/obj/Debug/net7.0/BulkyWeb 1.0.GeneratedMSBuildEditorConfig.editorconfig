@@ -16,12 +16,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\BulkyWeb 1.0
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Courses/dotnet/Tutorial/BulkyWeb 1.0/BulkyWeb 1.0/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Courses/dotnet/Tutorial/BulkyWeb 1.0/BulkyWeb 1.0/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Courses/dotnet/Tutorial/BulkyWeb 1.0/BulkyWeb 1.0/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Courses/dotnet/Tutorial/BulkyWeb 1.0/BulkyWeb 1.0/Views/Quiz/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpelxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Courses/dotnet/Tutorial/BulkyWeb 1.0/BulkyWeb 1.0/Views/Shared/Error.cshtml]

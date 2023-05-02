@@ -1,0 +1,46 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model List<QList>
+<h1>Questions We've Collected</h1>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>
+               QuestionId
+            </th>
+            <th>
+                Question
+            </th>
+            <th>
+                Correct_Answer
+            </th>
+            <th>
+                Wrong_Answer_1
+            </th>
+            <th>
+                Wrong_Answer_2
+            </th>
+            <th>
+                Wrong_Answer_3
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var obj in Model)
+        {
+            <tr>
+                <td>@obj.Question_ID</td>
+                <td>@obj.Question</td>
+                <td>@obj.Correst_Answer</td>
+                <td>@obj.WrongAnswer_1</td>
+                <td>@obj.WrongAnswer_2</td>
+                <td>@obj.WrongAnswer_3</td>
+
+            </tr>
+        }
+    </tbody>
+</table>

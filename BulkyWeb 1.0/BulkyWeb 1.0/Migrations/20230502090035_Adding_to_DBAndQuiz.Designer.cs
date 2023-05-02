@@ -3,6 +3,7 @@ using BulkyWeb_1._0.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BulkyWeb_1._0.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230502090035_Adding_to_DBAndQuiz")]
+    partial class Adding_to_DBAndQuiz
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -102,7 +105,7 @@ namespace BulkyWeb_1._0.Migrations
                     b.HasData(
                         new
                         {
-                            Question_ID = 2,
+                            Question_ID = -1,
                             Correst_Answer = "King Charles III",
                             Question = "King Of England",
                             WrongAnswer_1 = "King Charles II",
@@ -111,7 +114,7 @@ namespace BulkyWeb_1._0.Migrations
                         },
                         new
                         {
-                            Question_ID = 3,
+                            Question_ID = -2,
                             Correst_Answer = "50",
                             Question = "How many states are there in USA",
                             WrongAnswer_1 = "51",
