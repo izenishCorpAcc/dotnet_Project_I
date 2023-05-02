@@ -1,0 +1,31 @@
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\BulkyWeb 1.0\bin\Debug\net7.0\appsettings.Development.json
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\BulkyWeb 1.0\bin\Debug\net7.0\appsettings.json
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\BulkyWeb 1.0\bin\Debug\net7.0\BulkyWeb 1.0.staticwebassets.runtime.json
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\BulkyWeb 1.0\bin\Debug\net7.0\BulkyWeb 1.0.exe
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\BulkyWeb 1.0\bin\Debug\net7.0\BulkyWeb 1.0.deps.json
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\BulkyWeb 1.0\bin\Debug\net7.0\BulkyWeb 1.0.runtimeconfig.json
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\BulkyWeb 1.0\bin\Debug\net7.0\BulkyWeb 1.0.dll
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\BulkyWeb 1.0\bin\Debug\net7.0\BulkyWeb 1.0.pdb
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\BulkyWeb 1.0\obj\Debug\net7.0\BulkyWeb 1.0.csproj.AssemblyReference.cache
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\BulkyWeb 1.0\obj\Debug\net7.0\BulkyWeb 1.0.GeneratedMSBuildEditorConfig.editorconfig
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\BulkyWeb 1.0\obj\Debug\net7.0\BulkyWeb 1.0.AssemblyInfoInputs.cache
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\BulkyWeb 1.0\obj\Debug\net7.0\BulkyWeb 1.0.AssemblyInfo.cs
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\BulkyWeb 1.0\obj\Debug\net7.0\BulkyWeb 1.0.csproj.CoreCompileInputs.cache
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\BulkyWeb 1.0\obj\Debug\net7.0\BulkyWeb 1.0.MvcApplicationPartsAssemblyInfo.cache
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\BulkyWeb 1.0\obj\Debug\net7.0\BulkyWeb 1.0.RazorAssemblyInfo.cache
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\BulkyWeb 1.0\obj\Debug\net7.0\BulkyWeb 1.0.RazorAssemblyInfo.cs
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\BulkyWeb 1.0\obj\Debug\net7.0\staticwebassets\msbuild.BulkyWeb 1.0.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\BulkyWeb 1.0\obj\Debug\net7.0\staticwebassets\msbuild.build.BulkyWeb 1.0.props
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\BulkyWeb 1.0\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.BulkyWeb 1.0.props
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\BulkyWeb 1.0\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.BulkyWeb 1.0.props
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\BulkyWeb 1.0\obj\Debug\net7.0\staticwebassets.pack.json
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\BulkyWeb 1.0\obj\Debug\net7.0\staticwebassets.build.json
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\BulkyWeb 1.0\obj\Debug\net7.0\staticwebassets.development.json
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\BulkyWeb 1.0\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\BulkyWeb 1.0\obj\Debug\net7.0\scopedcss\bundle\BulkyWeb 1.0.styles.css
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\BulkyWeb 1.0\obj\Debug\net7.0\scopedcss\projectbundle\BulkyWeb 1.0.bundle.scp.css
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\BulkyWeb 1.0\obj\Debug\net7.0\BulkyWeb 1.0.dll
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\BulkyWeb 1.0\obj\Debug\net7.0\refint\BulkyWeb 1.0.dll
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\BulkyWeb 1.0\obj\Debug\net7.0\BulkyWeb 1.0.pdb
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\BulkyWeb 1.0\obj\Debug\net7.0\BulkyWeb 1.0.genruntimeconfig.cache
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\BulkyWeb 1.0\obj\Debug\net7.0\ref\BulkyWeb 1.0.dll
