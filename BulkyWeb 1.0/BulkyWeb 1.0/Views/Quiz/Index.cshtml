@@ -1,7 +1,19 @@
 ﻿
 
 @model List<QList>
-<h1>Questions We've Collected</h1>
+<div class="container">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary text-start">
+                Questions
+            </h2>
+        </div>
+        <div class="col-4 text-end">
+            <a asp-action="QuizCreate" class="btn btn-primary">QUIZ!</a>
+        </div>
+    </div>
+
+        <h1>Questions We've Collected</h1>
 <table class="table table-bordered table-striped">
     <thead>
         <tr>
@@ -70,3 +82,4 @@
         }-->
     </tbody>
 </table>
+</div>

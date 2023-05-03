@@ -18,6 +18,9 @@ namespace BulkyWeb_1._0.Controllers
         List<QList> objQuestionsList=_db.QuestionList.ToList();
             return View(objQuestionsList);
         }
+        public IActionResult QuizCreate() {
+            return View();
+        }
     }
 }
 
