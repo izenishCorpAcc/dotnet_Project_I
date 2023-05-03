@@ -1,8 +1,4 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿
 
 @model List<QList>
 <h1>Questions We've Collected</h1>
@@ -16,16 +12,16 @@
                 Question
             </th>
             <th>
-                Correct_Answer
+                Answer_0
             </th>
             <th>
-                Wrong_Answer_1
+                Answer_1
             </th>
             <th>
-                Wrong_Answer_2
+                Answer_2
             </th>
             <th>
-                Wrong_Answer_3
+                Answer_3
             </th>
         </tr>
     </thead>
@@ -41,6 +37,36 @@
                 <td>@obj.WrongAnswer_3</td>
 
             </tr>
-        }
+        } 
+        <!--
+        @foreach (var obj in Model)
+        {
+            <tr>
+                <td>@obj.Question_ID</td>
+                <td>@obj.Question</td>
+                <td>
+                    @{
+                        // Put the possible answers into an array and shuffle it
+                        var answers = new[] { obj.Correst_Answer, obj.WrongAnswer_1, obj.WrongAnswer_2, obj.WrongAnswer_3 };
+                        var rng = new Random();
+                        int n = answers.Length;
+                        while (n > 1)
+                        {
+                            n--;
+                            int k = rng.Next(n + 1);
+                            string temp = answers[k];
+                            answers[k] = answers[n];
+                            answers[n] = temp;
+                        }
+                    }
+                    <ul class="list-unstyled">
+                        @foreach (var answer in answers)
+                        {
+                            <li>@answer</li>
+                        }
+                    </ul>
+                </td>
+            </tr>
+        }-->
     </tbody>
 </table>
