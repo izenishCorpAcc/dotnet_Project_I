@@ -25,6 +25,10 @@ namespace BulkyWeb_1._0.Controllers
         [HttpPost]
         public IActionResult Create(Category obj)
         {
+            if (obj.Name == obj.DisplayOrder.ToString())
+            {
+                ModelState.AddModelError("Name", "The fields can't be the same");
+            }
             if (ModelState.IsValid) 
             { 
             _db.Categories.Add(obj);
