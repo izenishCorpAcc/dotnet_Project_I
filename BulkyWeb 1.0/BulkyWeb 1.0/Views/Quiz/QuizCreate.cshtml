@@ -1,3 +1,47 @@
-﻿<h1>
-    QUIZ!
-</h1>
+﻿@model Prasna
+
+
+
+<form method="post">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">Prasna Haru</h2>
+            <hr />
+        </div>
+
+
+
+        <div class="mb-3 row">
+            <label asp-for="Question"> </label>
+            <input asp-for="Question" class="form-control" />
+        </div>
+        <div class="mb-3 row">
+            <label asp-for="Correst_Answer"></label>
+            <input asp-for="Correst_Answer" class="form-control" />
+        </div>
+        <div class="mb-3 row">
+            <label asp-for="WrongAnswer_1"></label>
+            <input asp-for="WrongAnswer_1" class="form-control" />
+        </div>
+        <div class="mb-3 row">
+            <label asp-for="WrongAnswer_2"></label>
+            <input asp-for="WrongAnswer_2" class="form-control" />
+        </div>
+        <div class="mb-3 row">
+            <label asp-for="WrongAnswer_3"></label>
+            <input asp-for="WrongAnswer_3" class="form-control" />
+        </div>
+
+        <div class="row">
+            <div class="col-6 col-md-3">
+                <button type="submit" class="btn btn-primary form-control w-100">Create</button>
+            </div>
+            <div class="col-6 col-md-3">
+                <a asp-controller="Quiz" asp-action="Index" class="btn btn-secondary border form-control w-100">Back to List</a>
+            </div>
+        </div>
+
+
+
+    </div>
+</form> 
