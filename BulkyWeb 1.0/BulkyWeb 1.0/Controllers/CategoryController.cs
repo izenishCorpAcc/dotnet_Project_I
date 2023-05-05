@@ -21,9 +21,18 @@ namespace BulkyWeb_1._0.Controllers
         {
             return View();
         }
-        public IActionResult QuizCreate()
+
+        [HttpPost]
+        public IActionResult Create(Category obj)
         {
+            if (ModelState.IsValid) 
+            { 
+            _db.Categories.Add(obj);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
+            }
             return View();
+          
         }
     }
 }

@@ -22,6 +22,17 @@ namespace BulkyWeb_1._0.Controllers
         public IActionResult QuizCreate() {
             return View();
         }
+        [HttpPost]
+        public IActionResult QuizCreate(Prasna obj)
+        {
+            if (ModelState.IsValid) { 
+            _db.Prasna.Add(obj);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
+            }
+            return View();
+
+        }
     }
 }
 
