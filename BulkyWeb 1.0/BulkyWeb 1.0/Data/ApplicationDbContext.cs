@@ -10,8 +10,9 @@ namespace BulkyWeb_1._0.Data
         {
           
         }
+        public DbSet<Prasna> Prasna { get; set; }
         public DbSet<Category> Categories { get; set; }
-        public DbSet<QList> QuestionList { get; set; }
+      
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Category>().HasData(
@@ -23,10 +24,7 @@ namespace BulkyWeb_1._0.Data
 
             );
 
-            modelBuilder.Entity<QList>().HasData(
-                new QList { Question_ID = 2, Question = "King Of England", Correst_Answer = "King Charles III", WrongAnswer_1 = "King Charles II", WrongAnswer_2 = "King Charles I", WrongAnswer_3 = "King Charles IV" },
-                new QList { Question_ID = 3, Question = "How many states are there in USA", Correst_Answer = "50", WrongAnswer_1 = "51", WrongAnswer_3 = "52", WrongAnswer_2 = "49" }
-                );
+            
         }
 
     }

@@ -6,8 +6,8 @@ namespace BulkyWeb_1._0.Models
     {
         [Key]
         public int Question_ID { get; set; }
-        [Required]
         
+        [Required]
         public string Question { get; set; }
         public string Correst_Answer { get; set; }
         public string WrongAnswer_1{ get; set; }

@@ -15,8 +15,9 @@ namespace BulkyWeb_1._0.Controllers
         public IActionResult Index()
         {
                
-        List<QList> objQuestionsList=_db.QuestionList.ToList();
+        List<Prasna> objQuestionsList=_db.Prasna.ToList();
             return View(objQuestionsList);
+          //return View();
         }
         public IActionResult QuizCreate() {
             return View();

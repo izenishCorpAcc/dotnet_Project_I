@@ -3,6 +3,7 @@ using BulkyWeb_1._0.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BulkyWeb_1._0.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230504105922_checkinQlistw2")]
+    partial class checkinQlistw2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -62,12 +65,12 @@ namespace BulkyWeb_1._0.Migrations
                         new
                         {
                             Id = 4,
-                            DisplayOrder = 4,
+                            DisplayOrder = 40,
                             Name = "Romance"
                         });
                 });
 
-            modelBuilder.Entity("BulkyWeb_1._0.Models.Prasna", b =>
+            modelBuilder.Entity("BulkyWeb_1._0.Models.QsList", b =>
                 {
                     b.Property<int>("Question_ID")
                         .ValueGeneratedOnAdd()
@@ -97,7 +100,27 @@ namespace BulkyWeb_1._0.Migrations
 
                     b.HasKey("Question_ID");
 
-                    b.ToTable("Prasna");
+                    b.ToTable("QuestionList");
+
+                    b.HasData(
+                        new
+                        {
+                            Question_ID = 2,
+                            Correst_Answer = "King Charles III",
+                            Question = "King Of England",
+                            WrongAnswer_1 = "King Charles II",
+                            WrongAnswer_2 = "King Charles I",
+                            WrongAnswer_3 = "King Charles IV"
+                        },
+                        new
+                        {
+                            Question_ID = 3,
+                            Correst_Answer = "50",
+                            Question = "How many states are there in USA",
+                            WrongAnswer_1 = "51",
+                            WrongAnswer_2 = "49",
+                            WrongAnswer_3 = "52"
+                        });
                 });
 #pragma warning restore 612, 618
         }
