@@ -38,7 +38,7 @@ namespace BulkyWeb_1._0.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categories");
+                    b.ToTable("Categories", (string)null);
 
                     b.HasData(
                         new
@@ -97,7 +97,7 @@ namespace BulkyWeb_1._0.Migrations
 
                     b.HasKey("Question_ID");
 
-                    b.ToTable("Prasna");
+                    b.ToTable("Prasna", (string)null);
                 });
 #pragma warning restore 612, 618
         }
