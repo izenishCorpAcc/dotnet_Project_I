@@ -1,4 +1,8 @@
 ﻿@model List<Category> 
+@if (TempData["success"] != null)
+{
+    <h6>@TempData["success"]</h6>
+}
 <div class="container">
     <div class="row pt-4">
         <div class="col-6">
@@ -12,10 +16,6 @@
                 <i class="bi bi-database-add">Create New Category</i>
             </a>
         </div>
-      
-
-
-
     </div>
     <!--<h1>Category</h1>-->
 

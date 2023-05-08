@@ -28,6 +28,8 @@ namespace BulkyWeb_1._0.Controllers
             if (ModelState.IsValid) { 
             _db.Prasna.Add(obj);
             _db.SaveChanges();
+            TempData["success"] = "Question added successfully";
+
             return RedirectToAction("Index");
             }
             return View();
@@ -54,6 +56,8 @@ namespace BulkyWeb_1._0.Controllers
             {
                 _db.Prasna.Update(obj);
                 _db.SaveChanges();
+                TempData["success"] = "Question Edited successfully";
+
                 return RedirectToAction("Index");
             }
             return View();
@@ -83,6 +87,8 @@ namespace BulkyWeb_1._0.Controllers
             }
             _db.Prasna.Remove(obj);
             _db.SaveChanges();
+            TempData["success"] = "Question deleted successfully";
+
             return RedirectToAction("Index");
         }
 

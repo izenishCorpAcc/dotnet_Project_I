@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VPJXs4/J0M0RyQ53Q75bBZ+QlH3f6q2Ah7k6G8F+/Co=",
+  "Hash": "WXtS4XfbAkI/hZfu0ZpCcyTrfsy0wzAUzj3MpKKo0u0=",
   "Source": "BulkyWeb 1.0",
   "BasePath": "_content/BulkyWeb 1.0",
   "Mode": "Default",
@@ -68,12 +68,12 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\Courses\\dotnet\\Tutorial\\BulkyWeb 1.0\\BulkyWeb 1.0\\wwwroot\\favicon.ico",
+      "Identity": "D:\\Courses\\dotnet\\Tutorial\\BulkyWeb 1.0\\BulkyWeb 1.0\\wwwroot\\d.ico",
       "SourceId": "BulkyWeb 1.0",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Courses\\dotnet\\Tutorial\\BulkyWeb 1.0\\BulkyWeb 1.0\\wwwroot\\",
       "BasePath": "_content/BulkyWeb 1.0",
-      "RelativePath": "favicon.ico",
+      "RelativePath": "d.ico",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -82,7 +82,41 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\favicon.ico"
+      "OriginalItemSpec": "wwwroot\\d.ico"
+    },
+    {
+      "Identity": "D:\\Courses\\dotnet\\Tutorial\\BulkyWeb 1.0\\BulkyWeb 1.0\\wwwroot\\favicon.png",
+      "SourceId": "BulkyWeb 1.0",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Courses\\dotnet\\Tutorial\\BulkyWeb 1.0\\BulkyWeb 1.0\\wwwroot\\",
+      "BasePath": "_content/BulkyWeb 1.0",
+      "RelativePath": "favicon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "D:\\Courses\\dotnet\\Tutorial\\BulkyWeb 1.0\\BulkyWeb 1.0\\wwwroot\\favicon2.png",
+      "SourceId": "BulkyWeb 1.0",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Courses\\dotnet\\Tutorial\\BulkyWeb 1.0\\BulkyWeb 1.0\\wwwroot\\",
+      "BasePath": "_content/BulkyWeb 1.0",
+      "RelativePath": "favicon2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon2.png"
     },
     {
       "Identity": "D:\\Courses\\dotnet\\Tutorial\\BulkyWeb 1.0\\BulkyWeb 1.0\\wwwroot\\js\\site.js",
