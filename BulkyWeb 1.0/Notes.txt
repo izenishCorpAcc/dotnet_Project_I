@@ -38,3 +38,26 @@ In nuget manager:
  add-migration AddQuestionsTable
  update-database
  
+ 
+Client Side validation using Partial View as @section Script{
+and include _ValidationScriptsPartial
+}
+
+then to pass the ID on button press use
+asp-route-id
+the id part must be what we have placed in the controller
+for example:
+public IActionResult Edit(int? id)
+        {
+            if(id == null||id==0)
+            {
+                return NotFound();
+            }
+            Category? categoryFromDB = _db.Categories.FirstOrDefault(c => c.Id == id);
+           
+            if(categoryFromDB != null)
+            {
+                return NotFound();
+            }
+            return View(categoryFromDB);
+        }
