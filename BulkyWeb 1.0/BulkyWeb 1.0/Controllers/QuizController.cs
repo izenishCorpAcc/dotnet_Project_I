@@ -33,6 +33,60 @@ namespace BulkyWeb_1._0.Controllers
             return View();
 
         }
+        //EDIT
+        public IActionResult Edit(int? id)
+        {
+            if (id == null||id==0)
+            {
+                return NotFound();
+            }
+            Prasna? obj= _db.Prasna.FirstOrDefault(c=>c.Question_ID==id);
+            if(obj==null)
+            {
+                return NotFound();
+            }
+            return View(obj);
+        }
+        [HttpPost]
+        public IActionResult Edit(Prasna obj)
+        {
+            if(ModelState.IsValid)
+            {
+                _db.Prasna.Update(obj);
+                _db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View();
+        }
+        public IActionResult Delete(int? id)
+        {
+            if (id==null||id==0)
+            {
+                return NotFound();
+            }
+            Prasna? obj= _db.Prasna.FirstOrDefault(c=>c.Question_ID==id);
+            if(obj==null)
+            {
+                return NotFound();
+            }
+            return View(obj);
+
+        }
+
+        [HttpPost,ActionName("Delete")]
+        public IActionResult DeletePost(int? id)
+        {
+            Prasna? obj=_db.Prasna.FirstOrDefault(c=> c.Question_ID==id);
+            if (obj == null)
+            {
+                return NotFound();  
+            }
+            _db.Prasna.Remove(obj);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        
     }
 }
 
