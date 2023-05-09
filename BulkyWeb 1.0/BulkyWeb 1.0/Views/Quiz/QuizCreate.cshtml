@@ -5,38 +5,38 @@
 <form method="post">
     <div class="border p-3 mt-4">
         <div class="row pb-2">
-            <h2 class="text-primary">Prasna Haru</h2>
+            <h2 class="text-primary">Add More Questions:</h2>
             <hr />
         </div>
 
 
         <div asp-validation-summary="All" class="text-danger"></div>
 
-        <div class="mb-3 row">
-            <label asp-for="Question"> </label>
-            <input asp-for="Question" class="form-control" />
+        <div class="mb-3 mt-3 row" >
+            <label asp-for="Question" style=" font-size: 30px;"> </label>
+            <input asp-for="Question" class="form-control" style="min-height:80px"/>
             <span asp-validation-for="Question" class="text-bg-danger"></span>
 
         </div>
-        <div class="mb-3 row">
-            <label asp-for="Correst_Answer"></label>
+        <div class="mb-3 mt-3 row">
+            <label asp-for="Correst_Answer" style="color:greenyellow; font-size: 25px;"></label>
             <input asp-for="Correst_Answer" class="form-control" />
             <span asp-validation-for="Correst_Answer" class="text-bg-danger"></span>
         </div>
         <div class="mb-3 row">
-            <label asp-for="WrongAnswer_1"></label>
+            <label asp-for="WrongAnswer_1" style="color:red; font-size: 25px;"></label>
             <input asp-for="WrongAnswer_1" class="form-control" />
             <span asp-validation-for="WrongAnswer_1" class="text-bg-danger"></span>
 
         </div>
         <div class="mb-3 row">
-            <label asp-for="WrongAnswer_2"></label>
+            <label asp-for="WrongAnswer_2" style="color:red; font-size: 25px;"></label>
             <input asp-for="WrongAnswer_2" class="form-control" />
             <span asp-validation-for="WrongAnswer_2" class="text-bg-danger"></span>
 
         </div>
         <div class="mb-3 row">
-            <label asp-for="WrongAnswer_3"></label>
+            <label asp-for="WrongAnswer_3" style="color:red; font-size: 25px;"></label>
             <input asp-for="WrongAnswer_3" class="form-control" />
             <span asp-validation-for="WrongAnswer_3" class="text-bg-danger"></span>
 

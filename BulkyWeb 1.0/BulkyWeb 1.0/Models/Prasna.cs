@@ -25,6 +25,24 @@ namespace BulkyWeb_1._0.Models
         [Required]
         [DisplayName("Wrong Answer 3:")]
         public string WrongAnswer_3 { get; set; }
-        
+
+        public string[] GetShuffledAnswers()
+        {
+            // create an array of all the answer options
+            string[] answers = new string[] { Correst_Answer, WrongAnswer_1, WrongAnswer_2, WrongAnswer_3 };
+
+            // shuffle the answer options using Fisher-Yates shuffle
+            Random rand = new Random();
+            for (int i = answers.Length - 1; i >= 1; i--)
+            {
+                int j = rand.Next(i + 1);
+                string temp = answers[i];
+                answers[i] = answers[j];
+                answers[j] = temp;
+            }
+            return answers;
+
+
+        }
     }
 }

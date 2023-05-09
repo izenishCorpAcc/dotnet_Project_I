@@ -25,7 +25,15 @@ namespace BulkyWeb_1._0.Controllers
         [HttpPost]
         public IActionResult QuizCreate(Prasna obj)
         {
-            if (ModelState.IsValid) { 
+            var a = obj.Correst_Answer;
+            var b = obj.WrongAnswer_1;
+            var c = obj.WrongAnswer_2;
+            var d = obj.WrongAnswer_3;
+            if (a == b || a == c || a == d || b == c || b == d || c == d)
+            {
+                ModelState.AddModelError("", "The Answers can't have the same value");
+            }
+                if (ModelState.IsValid) { 
             _db.Prasna.Add(obj);
             _db.SaveChanges();
             TempData["success"] = "Question added successfully";
@@ -90,6 +98,20 @@ namespace BulkyWeb_1._0.Controllers
             TempData["success"] = "Question deleted successfully";
 
             return RedirectToAction("Index");
+        }
+
+        public IActionResult QA()
+        {
+            //var questions = _db.Prasna.ToList();
+            List<Prasna> questions = _db.Prasna.ToList();
+            // shuffle answers for each question
+            foreach (var question in questions)
+            {
+                var shuffledAnswers = question.GetShuffledAnswers();
+                ViewData[$"shuffledAnswers_{question.Question_ID}"] = shuffledAnswers;
+            }
+
+            return View(questions);
         }
 
         

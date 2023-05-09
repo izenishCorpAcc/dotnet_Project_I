@@ -1,0 +1,15 @@
+﻿@model IEnumerable<BulkyWeb_1._0.Models.Prasna>
+
+@foreach (var item in Model)
+{
+    <div class="card">
+        <div class="card-header">Question @item.Question_ID</div>
+        <div class="card-body">
+            <h5 class="card-title">@Html.DisplayFor(modelItem => item.Question)</h5>
+            @foreach (var answer in ViewData[$"shuffledAnswers_{item.Question_ID}"] as string[])
+            {
+                <button class="btn btn-primary m-2">@answer</button>
+            }
+        </div>
+    </div>
+}
