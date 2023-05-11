@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WXtS4XfbAkI/hZfu0ZpCcyTrfsy0wzAUzj3MpKKo0u0=",
+  "Hash": "T0La0VnSKoOPfMgcEyC7ks6HWtdVPn28w4bxjURInyE=",
   "Source": "BulkyWeb 1.0",
   "BasePath": "_content/BulkyWeb 1.0",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\Courses\\dotnet\\Tutorial\\BulkyWeb 1.0\\BulkyWeb 1.0\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\BulkyWeb 1.0.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\Courses\\dotnet\\Tutorial\\BulkyWeb 1.0\\BulkyWeb 1.0\\wwwroot\\authen_and_authorize.sql",
+      "SourceId": "BulkyWeb 1.0",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Courses\\dotnet\\Tutorial\\BulkyWeb 1.0\\BulkyWeb 1.0\\wwwroot\\",
+      "BasePath": "_content/BulkyWeb 1.0",
+      "RelativePath": "authen_and_authorize.sql",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\authen_and_authorize.sql"
     },
     {
       "Identity": "D:\\Courses\\dotnet\\Tutorial\\BulkyWeb 1.0\\BulkyWeb 1.0\\wwwroot\\css\\site.css",

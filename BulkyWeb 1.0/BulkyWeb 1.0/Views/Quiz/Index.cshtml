@@ -7,11 +7,12 @@
         </div>
         <div class="col-3 text-end">
             <a asp-action="QuizCreate" class="btn btn-primary">Add Questions!</a>
+            <a asp-action="QA" class="btn btn-warning" style="width:50%;background-color:forestgreen">Q/A!</a>
 
         </div>
-        <div class="col-3 text-end">
+        @*<div class="col-3 text-end">
             <a asp-action="QA" class="btn btn-warning">Q/A!</a>
-        </div>
+        </div>*@
     </div>
 
         <h1>List Of Questions:</h1>
@@ -62,8 +63,9 @@
 
             </tr>
         } 
-        <!--
-        @foreach (var obj in Model)
+        
+
+        @*@foreach (var obj in Model)
         {
             <tr>
                 <td>@obj.Question_ID</td>
@@ -91,7 +93,8 @@
                     </ul>
                 </td>
             </tr>
-        }-->
+        }*@
+        
     </tbody>
 </table>
 </div>
