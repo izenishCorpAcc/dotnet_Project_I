@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Courses\\dotnet\\Tutorial\\BulkyWeb 1.0\\BulkyWeb 1.0\\BulkyWeb 1.0.csproj": {}
+    "/Users/izenish/Documents/dotnet_Project_I/BulkyWeb 1.0/BulkyWeb 1.0/BulkyWeb 1.0.csproj": {}
   },
   "projects": {
-    "D:\\Courses\\dotnet\\Tutorial\\BulkyWeb 1.0\\BulkyWeb 1.0\\BulkyWeb 1.0.csproj": {
+    "/Users/izenish/Documents/dotnet_Project_I/BulkyWeb 1.0/BulkyWeb 1.0/BulkyWeb 1.0.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Courses\\dotnet\\Tutorial\\BulkyWeb 1.0\\BulkyWeb 1.0\\BulkyWeb 1.0.csproj",
+        "projectUniqueName": "/Users/izenish/Documents/dotnet_Project_I/BulkyWeb 1.0/BulkyWeb 1.0/BulkyWeb 1.0.csproj",
         "projectName": "BulkyWeb 1.0",
-        "projectPath": "D:\\Courses\\dotnet\\Tutorial\\BulkyWeb 1.0\\BulkyWeb 1.0\\BulkyWeb 1.0.csproj",
-        "packagesPath": "C:\\Users\\jenish.prajapati\\.nuget\\packages\\",
-        "outputPath": "D:\\Courses\\dotnet\\Tutorial\\BulkyWeb 1.0\\BulkyWeb 1.0\\obj\\",
+        "projectPath": "/Users/izenish/Documents/dotnet_Project_I/BulkyWeb 1.0/BulkyWeb 1.0/BulkyWeb 1.0.csproj",
+        "packagesPath": "/Users/izenish/.nuget/packages/",
+        "outputPath": "/Users/izenish/Documents/dotnet_Project_I/BulkyWeb 1.0/BulkyWeb 1.0/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jenish.prajapati\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/izenish/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -57,6 +55,18 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[7.0.6, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL.Design": {
+              "target": "Package",
+              "version": "[1.1.0, )"
             }
           },
           "imports": [
@@ -78,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
         }
       }
     }
