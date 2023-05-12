@@ -1,0 +1,44 @@
+﻿<Properties StartupConfiguration="{983899F7-C334-4A94-8BA8-96F62D4465EC}|https">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.BulkyWeb_2201.0 PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BulkyWeb 1.0/Migrations/20230504104044_b4.Designer.cs">
+    <Files>
+      <File FileName="BulkyWeb 1.0/appsettings.json" Line="14" Column="1" />
+      <File FileName="BulkyWeb 1.0/Program.cs" />
+      <File FileName="BulkyWeb 1.0/Context/ApplicationDbContext.cs" Line="19" Column="1" />
+      <File FileName="BulkyWeb 1.0/Controllers/QuizController.cs" Line="12" Column="10" />
+      <File FileName="BulkyWeb 1.0/Controllers/CategoryController.cs" Line="29" Column="10" />
+      <File FileName="BulkyWeb 1.0/Migrations/20230502074617_AddCategoryTableToDb.Designer.cs" Line="2" Column="21" />
+      <File FileName="BulkyWeb 1.0/Migrations/20230504104044_b4.Designer.cs" Line="2" Column="21" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BulkyWeb 1.0" expanded="True">
+            <Node name="BulkyWeb 1.0" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Migrations" expanded="True">
+                <Node name="20230502074617_AddCategoryTableToDb.cs" expanded="True" />
+                <Node name="20230504104044_b4.cs" expanded="True">
+                  <Node name="20230504104044_b4.Designer.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="wwwroot" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
