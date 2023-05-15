@@ -13,6 +13,7 @@ namespace BulkyWeb_1._0.Data
         public DbSet<Prasna> Prasna { get; set; }
         public DbSet<Category> Categories { get; set; }
       
+        public DbSet<SuperAdmin> superAdmins { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Category>().HasData(
