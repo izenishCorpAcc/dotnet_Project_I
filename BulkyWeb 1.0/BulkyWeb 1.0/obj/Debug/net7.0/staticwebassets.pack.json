@@ -257,6 +257,10 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "D:\\Courses\\dotnet\\Tutorial\\BulkyWeb 1.0\\BulkyWeb 1.0\\wwwroot\\superadmin proc.sql",
+      "PackagePath": "staticwebassets\\superadmin proc.sql"
+    },
+    {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.BulkyWeb 1.0.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

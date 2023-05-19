@@ -1,5 +1,6 @@
 ﻿using BulkyWeb_1._0.Data;
 using BulkyWeb_1._0.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -7,6 +8,7 @@ namespace BulkyWeb_1._0.Controllers
 {
     public class QuizController : Controller
     {
+        
         private readonly ApplicationDbContext _db;
         public QuizController(ApplicationDbContext db)
         {

@@ -1,0 +1,12 @@
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\Bulky,DataAccess\bin\Debug\net7.0\Bulky,DataAccess.deps.json
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\Bulky,DataAccess\bin\Debug\net7.0\Bulky,DataAccess.dll
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\Bulky,DataAccess\bin\Debug\net7.0\Bulky,DataAccess.pdb
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\Bulky,DataAccess\obj\Debug\net7.0\Bulky,DataAccess.csproj.AssemblyReference.cache
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\Bulky,DataAccess\obj\Debug\net7.0\Bulky,DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\Bulky,DataAccess\obj\Debug\net7.0\Bulky,DataAccess.AssemblyInfoInputs.cache
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\Bulky,DataAccess\obj\Debug\net7.0\Bulky,DataAccess.AssemblyInfo.cs
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\Bulky,DataAccess\obj\Debug\net7.0\Bulky,DataAccess.csproj.CoreCompileInputs.cache
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\Bulky,DataAccess\obj\Debug\net7.0\Bulky,DataAccess.dll
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\Bulky,DataAccess\obj\Debug\net7.0\refint\Bulky,DataAccess.dll
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\Bulky,DataAccess\obj\Debug\net7.0\Bulky,DataAccess.pdb
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\Bulky,DataAccess\obj\Debug\net7.0\ref\Bulky,DataAccess.dll

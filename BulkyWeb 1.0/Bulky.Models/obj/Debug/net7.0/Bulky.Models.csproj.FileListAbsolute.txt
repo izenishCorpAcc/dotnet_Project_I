@@ -1,0 +1,12 @@
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\Bulky.Models\bin\Debug\net7.0\Bulky.Models.deps.json
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\Bulky.Models\bin\Debug\net7.0\Bulky.Models.dll
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\Bulky.Models\bin\Debug\net7.0\Bulky.Models.pdb
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\Bulky.Models\obj\Debug\net7.0\Bulky.Models.csproj.AssemblyReference.cache
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\Bulky.Models\obj\Debug\net7.0\Bulky.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\Bulky.Models\obj\Debug\net7.0\Bulky.Models.AssemblyInfoInputs.cache
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\Bulky.Models\obj\Debug\net7.0\Bulky.Models.AssemblyInfo.cs
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\Bulky.Models\obj\Debug\net7.0\Bulky.Models.csproj.CoreCompileInputs.cache
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\Bulky.Models\obj\Debug\net7.0\Bulky.Models.dll
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\Bulky.Models\obj\Debug\net7.0\refint\Bulky.Models.dll
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\Bulky.Models\obj\Debug\net7.0\Bulky.Models.pdb
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\Bulky.Models\obj\Debug\net7.0\ref\Bulky.Models.dll

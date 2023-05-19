@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "T0La0VnSKoOPfMgcEyC7ks6HWtdVPn28w4bxjURInyE=",
+  "Hash": "mNqsVJiVCFmOioJ9J3jDkiTjWEcinvZgGyZKHQo1GPo=",
   "Source": "BulkyWeb 1.0",
   "BasePath": "_content/BulkyWeb 1.0",
   "Mode": "Default",
@@ -1120,6 +1120,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "D:\\Courses\\dotnet\\Tutorial\\BulkyWeb 1.0\\BulkyWeb 1.0\\wwwroot\\superadmin proc.sql",
+      "SourceId": "BulkyWeb 1.0",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Courses\\dotnet\\Tutorial\\BulkyWeb 1.0\\BulkyWeb 1.0\\wwwroot\\",
+      "BasePath": "_content/BulkyWeb 1.0",
+      "RelativePath": "superadmin proc.sql",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\superadmin proc.sql"
     }
   ]
 }
