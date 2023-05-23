@@ -1,9 +1,12 @@
 ﻿ using BulkyWeb_1._0.Data;
 using BulkyWeb_1._0.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BulkyWeb_1._0.Controllers
 {
+    [Authorize(Roles = "admin")]
+
     public class CategoryController : Controller
     {
         private readonly ApplicationDbContext _db;

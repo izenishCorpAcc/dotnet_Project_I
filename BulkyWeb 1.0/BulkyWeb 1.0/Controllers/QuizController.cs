@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BulkyWeb_1._0.Controllers
 {
+    [Authorize]
     public class QuizController : Controller
     {
         
@@ -14,6 +15,8 @@ namespace BulkyWeb_1._0.Controllers
         {
             _db = db;
         }
+        [Authorize(Roles = "admin")]
+
         public IActionResult Index()
         {
                
@@ -25,6 +28,8 @@ namespace BulkyWeb_1._0.Controllers
             return View();
         }
         [HttpPost]
+        [Authorize(Roles = "admin")]
+
         public IActionResult QuizCreate(Prasna obj)
         {
             var a = obj.Correst_Answer;
@@ -46,6 +51,8 @@ namespace BulkyWeb_1._0.Controllers
 
         }
         //EDIT
+        [Authorize(Roles = "admin")]
+
         public IActionResult Edit(int? id)
         {
             if (id == null||id==0)
@@ -60,6 +67,8 @@ namespace BulkyWeb_1._0.Controllers
             return View(obj);
         }
         [HttpPost]
+        [Authorize(Roles = "admin")]
+
         public IActionResult Edit(Prasna obj)
         {
             if(ModelState.IsValid)
@@ -72,6 +81,8 @@ namespace BulkyWeb_1._0.Controllers
             }
             return View();
         }
+        [Authorize(Roles = "admin")]
+
         public IActionResult Delete(int? id)
         {
             if (id==null||id==0)
@@ -88,6 +99,8 @@ namespace BulkyWeb_1._0.Controllers
         }
 
         [HttpPost,ActionName("Delete")]
+        [Authorize(Roles = "admin")]
+
         public IActionResult DeletePost(int? id)
         {
             Prasna? obj=_db.Prasna.FirstOrDefault(c=> c.Question_ID==id);
