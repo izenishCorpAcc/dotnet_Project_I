@@ -257,6 +257,14 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "D:\\Courses\\dotnet\\Tutorial\\BulkyWeb 1.0\\BulkyWeb 1.0\\wwwroot\\logo.png",
+      "PackagePath": "staticwebassets\\logo.png"
+    },
+    {
+      "Id": "D:\\Courses\\dotnet\\Tutorial\\BulkyWeb 1.0\\BulkyWeb 1.0\\wwwroot\\social-logo.jpg",
+      "PackagePath": "staticwebassets\\social-logo.jpg"
+    },
+    {
       "Id": "D:\\Courses\\dotnet\\Tutorial\\BulkyWeb 1.0\\BulkyWeb 1.0\\wwwroot\\superadmin proc.sql",
       "PackagePath": "staticwebassets\\superadmin proc.sql"
     },
