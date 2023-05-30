@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HT+FHWGs8xPur7cTuqLDm/En0DWNyjrpB1M8lE8fx7w=",
+  "Hash": "hXjDpxvxxZQZhIRQyBcVXd5o7GpFQ/CmSXtUUJZQyS4=",
   "Source": "BulkyWeb 1.0",
   "BasePath": "_content/BulkyWeb 1.0",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\authen_and_authorize.sql"
+    },
+    {
+      "Identity": "D:\\Courses\\dotnet\\Tutorial\\BulkyWeb 1.0\\BulkyWeb 1.0\\wwwroot\\check users and their roles.sql",
+      "SourceId": "BulkyWeb 1.0",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Courses\\dotnet\\Tutorial\\BulkyWeb 1.0\\BulkyWeb 1.0\\wwwroot\\",
+      "BasePath": "_content/BulkyWeb 1.0",
+      "RelativePath": "check users and their roles.sql",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\check users and their roles.sql"
     },
     {
       "Identity": "D:\\Courses\\dotnet\\Tutorial\\BulkyWeb 1.0\\BulkyWeb 1.0\\wwwroot\\css\\site.css",

@@ -1,0 +1,89 @@
+﻿@model IEnumerable<BulkyWeb_1._0.Models.Prasna>
+
+@*@{
+    var randomQuestions = ViewData["shuffledans"];
+ }*@
+@{
+    // Fisher-Yates shuffle
+    Random rand = new Random();
+    Func<string[], string[]> shuffle = (arr) =>
+    {
+        for (int i = arr.Length - 1; i >= 1; i--)
+        {
+            int j = rand.Next(i + 1);
+            string temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+        }
+        return arr;
+    };
+}
+
+
+
+    <form method="post" action="/Quiz/SubmitAnswers">
+    @foreach (var question in Model)
+    {
+        int a = 1, b = 2, c = 3;
+        var answers = shuffle(new string[] {
+        question.Correst_Answer,
+        question.WrongAnswer_1,
+        question.WrongAnswer_2,
+        question.WrongAnswer_3
+    });
+
+@*        string[] mArray = new string[]{
+    "@question.Correst_Answer"
+    , "@question.WrongAnswer_1"," @question.WrongAnswer_2"," @question.WrongAnswer_3"};
+*@
+        
+        <h2>@question.Question</h2>
+
+        <input type="radio" name="@question.Question_ID" value="@answers[0]" required>
+
+        @answers[0]
+
+        <br>
+
+        <input type="radio" name="@question.Question_ID" value="@answers[1]">
+
+        @answers[1]
+
+
+<br>
+        <input type="radio" name="@question.Question_ID" value=" @answers[2]">
+
+        @answers[2]
+
+            <br>
+        <input type="radio" name="@question.Question_ID" value="@answers[3]">
+
+        @answers[3]
+
+            <br>
+        
+    }
+    <button type="submit">Submit</button>
+</form>
+
+
+@*
+<html>
+    <head>
+        <title>TEST</title>
+    </head>
+    <body>
+        <div>
+            <section>
+            @using (Html.BeginForm("Qtest","Quiz"))
+            {
+                <input type="text" name="firstName"/>
+                <br/>
+                <input type="text" name="lastName" />
+                <br />
+                <input type="submit" value="Click me"/>
+            }
+        </section>
+        </div>
+    </body>
+</html>*@

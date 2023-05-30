@@ -41,8 +41,6 @@ namespace BulkyWeb_1._0.Models
                 answers[j] = temp;
             }
             return answers;
-
-
         }
     }
 }
