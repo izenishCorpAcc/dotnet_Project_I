@@ -24,7 +24,6 @@
     <form method="post" action="/Quiz/SubmitAnswers">
     @foreach (var question in Model)
     {
-        int a = 1, b = 2, c = 3;
         var answers = shuffle(new string[] {
         question.Correst_Answer,
         question.WrongAnswer_1,

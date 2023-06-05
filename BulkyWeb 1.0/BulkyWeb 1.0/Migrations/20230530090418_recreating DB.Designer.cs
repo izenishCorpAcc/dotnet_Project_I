@@ -4,6 +4,7 @@ using BulkyWeb_1._0.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BulkyWeb_1._0.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230530090418_recreating DB")]
+    partial class recreatingDB
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -181,6 +184,8 @@ namespace BulkyWeb_1._0.Migrations
 
                     b.HasKey("QuizResult_ID");
 
+                    b.HasIndex("Question_ID");
+
                     b.ToTable("QuizResults");
                 });
 
@@ -296,6 +301,17 @@ namespace BulkyWeb_1._0.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("UserTokens");
+                });
+
+            modelBuilder.Entity("BulkyWeb_1._0.Models.QuizResult", b =>
+                {
+                    b.HasOne("BulkyWeb_1._0.Models.Prasna", "Prasna")
+                        .WithMany()
+                        .HasForeignKey("Question_ID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Prasna");
                 });
 #pragma warning restore 612, 618
         }

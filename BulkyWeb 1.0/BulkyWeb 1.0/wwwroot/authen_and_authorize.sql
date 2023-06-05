@@ -21,3 +21,18 @@ VALUES
 go
 
 select * from RoleMaster
+
+go
+
+create table UserMaster
+(
+Uid int identity primary key,
+name varchar(20),
+userid varchar(20),
+password varchar(20),
+is_active bit,
+role int references RoleMaster(roleid),
+created_on datetime default getdate()
+)
+
+select * from UserMaster

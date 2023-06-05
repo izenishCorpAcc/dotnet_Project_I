@@ -3,6 +3,9 @@ using BulkyWeb_1._0.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using NuGet.Configuration;
+using System.Security.Claims;
+using System.Collections.Generic;
 
 namespace BulkyWeb_1._0.Controllers
 {
@@ -143,6 +146,74 @@ namespace BulkyWeb_1._0.Controllers
         {
             return "From Parameters-"+firstName+" , "+lastName;
         }
+
+        //[HttpPost]
+        //public IActionResult SubmitAnswers(IFormCollection form)
+        //{
+        //    var userId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+        //    foreach (var question in form.Keys)
+        //    {
+        //        var questionId = int.Parse(question);
+        //        var selectedAnswer = form[question];
+        //        var quizResult = new QuizResult
+        //        {
+        //            User_ID = userId,
+        //            Question_ID = questionId,
+        //            Answer = selectedAnswer
+        //        };
+        //        _db.QuizResults.Add(quizResult);
+        //        _db.SaveChanges();
+
+
+        //    }
+        //    return RedirectToAction("Results");
+        //}
+
+        [HttpPost]
+        public IActionResult SubmitAnswers(IFormCollection form)
+        {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+            var quizResults = new List<QuizResult>();
+            foreach (var question in form.Keys)
+            {
+                var questionId = int.Parse(question);
+                var selectedAnswer = form[question];
+                var quizResult = new QuizResult
+                {
+                    User_ID = userId,
+                    Question_ID = questionId,
+                    Answer = selectedAnswer
+                };
+                quizResults.Add(quizResult);
+            }
+            try
+            {
+                _db.QuizResults.AddRange(quizResults);
+                _db.SaveChanges();
+                return RedirectToAction("Results");
+            }
+            catch (Exception ex)
+            {
+                string errorMessage = "An error occurred while saving the quiz results: ";
+
+                // Check if there is an inner exception
+                if (ex.InnerException != null)
+                {
+                    // Include the inner exception's message
+                    errorMessage += ex.InnerException.Message;
+                }
+                else
+                {
+                    // If there is no inner exception, include the exception's message
+                    errorMessage += ex.Message;
+                }
+
+                return BadRequest(errorMessage);
+            }
+
+        }
+
+
 
 
     }

@@ -22,6 +22,7 @@ namespace BulkyWeb_1._0.Data
             modelBuilder.Entity<IdentityUserRole<string>>().HasKey(r => new { r.UserId, r.RoleId });
             modelBuilder.Entity<IdentityUserToken<string>>().HasKey(t => new { t.UserId, t.LoginProvider, t.Name });
 
+
             modelBuilder.Entity<Category>().HasData(
 
             new Category { Id=1,Name="Action",DisplayOrder=1 },

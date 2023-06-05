@@ -14,6 +14,6 @@ namespace BulkyWeb_1._0.Models
 
         public string  Answer { get; set; }
 
-        public virtual Prasna Question { get; set; }
+        //public virtual Prasna Prasna { get; set; }
     }
 }
