@@ -142,6 +142,22 @@ namespace BulkyWeb_1._0.Controllers
             return View(questions);
         }
 
+        //public IActionResult R()
+        //{
+        //    List<QuizResult> qResult = _db.QuizResults.Select(x=> new()
+        //    {
+        //        QuizResult_ID=x.QuizResult_ID,
+                
+        //    }
+                
+        //        ).ToList();
+        //    foreach (var question in questions)
+        //    {
+        //        var shuffledAnswers = question.GetShuffledAnswers();
+        //        ViewData["shuffledans"] = shuffledAnswers;
+        //    }
+        //    return View(questions);
+        //}
         public string Qtest(string firstName,string lastName)
         {
             return "From Parameters-"+firstName+" , "+lastName;

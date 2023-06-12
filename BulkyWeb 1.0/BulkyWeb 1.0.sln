@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BulkyWeb 1.0", "BulkyWeb 1.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthenAndAutho", "AuthenAndAutho\AuthenAndAutho.csproj", "{CE106529-A366-4783-BA2A-917C316DB701}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ", "LINQ\LINQ.csproj", "{116B3E3F-7333-4C7B-8D5A-CB832CE8FAC8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CE106529-A366-4783-BA2A-917C316DB701}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE106529-A366-4783-BA2A-917C316DB701}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE106529-A366-4783-BA2A-917C316DB701}.Release|Any CPU.Build.0 = Release|Any CPU
+		{116B3E3F-7333-4C7B-8D5A-CB832CE8FAC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{116B3E3F-7333-4C7B-8D5A-CB832CE8FAC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{116B3E3F-7333-4C7B-8D5A-CB832CE8FAC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{116B3E3F-7333-4C7B-8D5A-CB832CE8FAC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

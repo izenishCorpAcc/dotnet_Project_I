@@ -1,0 +1,15 @@
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\LINQ\bin\Debug\net7.0\LINQ.exe
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\LINQ\bin\Debug\net7.0\LINQ.deps.json
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\LINQ\bin\Debug\net7.0\LINQ.runtimeconfig.json
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\LINQ\bin\Debug\net7.0\LINQ.dll
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\LINQ\bin\Debug\net7.0\LINQ.pdb
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\LINQ\obj\Debug\net7.0\LINQ.csproj.AssemblyReference.cache
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\LINQ\obj\Debug\net7.0\LINQ.GeneratedMSBuildEditorConfig.editorconfig
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\LINQ\obj\Debug\net7.0\LINQ.AssemblyInfoInputs.cache
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\LINQ\obj\Debug\net7.0\LINQ.AssemblyInfo.cs
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\LINQ\obj\Debug\net7.0\LINQ.csproj.CoreCompileInputs.cache
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\LINQ\obj\Debug\net7.0\LINQ.dll
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\LINQ\obj\Debug\net7.0\refint\LINQ.dll
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\LINQ\obj\Debug\net7.0\LINQ.pdb
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\LINQ\obj\Debug\net7.0\LINQ.genruntimeconfig.cache
+D:\Courses\dotnet\Tutorial\BulkyWeb 1.0\LINQ\obj\Debug\net7.0\ref\LINQ.dll

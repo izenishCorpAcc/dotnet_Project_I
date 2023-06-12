@@ -26,6 +26,7 @@ namespace BulkyWeb_1._0.Models
         [DisplayName("Wrong Answer 3:")]
         public string WrongAnswer_3 { get; set; }
 
+
         public string[] GetShuffledAnswers()
         {
             // create an array of all the answer options

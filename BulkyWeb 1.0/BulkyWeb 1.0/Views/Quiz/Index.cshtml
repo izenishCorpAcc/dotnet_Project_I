@@ -19,6 +19,9 @@
 <table class="table table-bordered table-striped">
     <thead>
         <tr>
+             <th>
+               S.N
+            </th>
             <th>
                QuestionId
             </th>
@@ -41,9 +44,15 @@
         </tr>
     </thead>
     <tbody>
+            @{
+                int serialNumber = 1;
+            }
+
         @foreach (var obj in Model)
         {
             <tr>
+                <td>@serialNumber</td>
+                    
                 <td>@obj.Question_ID</td>
                 <td>@obj.Question</td>
                 <td>@obj.Correst_Answer</td>
@@ -62,6 +71,8 @@
                     </td>
 
             </tr>
+            serialNumber++;
+            
         } 
         
 

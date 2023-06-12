@@ -21,6 +21,11 @@ namespace BulkyWeb_1._0.Data
             modelBuilder.Entity<IdentityUserLogin<string>>().HasKey(c => new { c.LoginProvider, c.ProviderKey });
             modelBuilder.Entity<IdentityUserRole<string>>().HasKey(r => new { r.UserId, r.RoleId });
             modelBuilder.Entity<IdentityUserToken<string>>().HasKey(t => new { t.UserId, t.LoginProvider, t.Name });
+            modelBuilder.Entity<QuizResult>()
+       .HasOne(qr => qr.Prasna)
+       .WithMany()
+       .HasForeignKey(qr => qr.Question_ID)
+       .OnDelete(DeleteBehavior.Cascade);
 
 
             modelBuilder.Entity<Category>().HasData(
