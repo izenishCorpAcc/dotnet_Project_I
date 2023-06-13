@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BulkyWeb_1._0.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230612112907_FKEY")]
-    partial class FKEY
+    [Migration("20230613043734_typo fieldname correction")]
+    partial class typofieldnamecorrection
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

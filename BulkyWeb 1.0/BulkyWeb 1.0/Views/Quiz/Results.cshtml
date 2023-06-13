@@ -1,0 +1,90 @@
+﻿@model IEnumerable<BulkyWeb_1._0.Models.QuizResult>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Results</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .edit-link,
+        .details-link,
+        .delete-link {
+            text-decoration: none;
+            padding: 4px 8px;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: #fff;
+        }
+
+            .edit-link:hover,
+            .details-link:hover,
+            .delete-link:hover {
+                background-color: #0056b3;
+            }
+    </style>
+</head>
+<body>
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.User_ID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Prasna.Question)
+                </th>
+                <th>
+                    Answered
+                </th>
+                <th>
+                   Correct Answer
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.User_ID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Prasna.Question)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Answer)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Prasna.Correct_Answer)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.QuizResult_ID" class="edit-link">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.QuizResult_ID" class="details-link">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.QuizResult_ID" class="delete-link">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>

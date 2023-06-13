@@ -33,8 +33,8 @@ class HelloWorld
 
         List<Prasna> prasna = new List<Prasna>()
         {
-            new Prasna { Question_ID =1,Question="9*9",Correst_Answer="81",WrongAnswer_1="8",WrongAnswer_2="88",WrongAnswer_3="79"},
-            new Prasna { Question_ID =2,Question="Capital Of Nepal",Correst_Answer="Kathmandu",WrongAnswer_1="Bhaktapur",WrongAnswer_2="Nuwakot",WrongAnswer_3="Dharan"}
+            new Prasna { Question_ID =1,Question="9*9",Correct_Answer="81",WrongAnswer_1="8",WrongAnswer_2="88",WrongAnswer_3="79"},
+            new Prasna { Question_ID =2,Question="Capital Of Nepal",Correct_Answer="Kathmandu",WrongAnswer_1="Bhaktapur",WrongAnswer_2="Nuwakot",WrongAnswer_3="Dharan"}
         };
 
         IEnumerable<Prasna> query = from question in prasna
@@ -44,7 +44,7 @@ class HelloWorld
         {
             Console.WriteLine("QuestionId:"+x.Question_ID);
             Console.WriteLine("Question:"+x.Question);
-            Console.WriteLine("CorrectAns:"+x.Correst_Answer);
+            Console.WriteLine("CorrectAns:"+x.Correct_Answer);
         }
         Console.WriteLine("------------------");
 
@@ -53,7 +53,7 @@ class HelloWorld
         {
             Console.WriteLine("QuestionId:" + x.Question_ID);
             Console.WriteLine("Question:" + x.Question);
-            Console.WriteLine("CorrectAns:" + x.Correst_Answer);
+            Console.WriteLine("CorrectAns:" + x.Correct_Answer);
         }
 
     }
@@ -70,7 +70,7 @@ class HelloWorld
 
         [Required]
         [DisplayName("Correct Answer:")]
-        public string Correst_Answer { get; set; }
+        public string Correct_Answer { get; set; }
 
         [Required]
         [DisplayName("Wrong Answer 1:")]

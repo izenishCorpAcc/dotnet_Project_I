@@ -78,7 +78,7 @@ namespace BulkyWeb_1._0.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Question_ID"));
 
-                    b.Property<string>("Correst_Answer")
+                    b.Property<string>("Correct_Answer")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

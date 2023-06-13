@@ -25,14 +25,14 @@
     @foreach (var question in Model)
     {
         var answers = shuffle(new string[] {
-        question.Correst_Answer,
+        question.Correct_Answer,
         question.WrongAnswer_1,
         question.WrongAnswer_2,
         question.WrongAnswer_3
     });
 
 @*        string[] mArray = new string[]{
-    "@question.Correst_Answer"
+    "@question.Correct_Answer"
     , "@question.WrongAnswer_1"," @question.WrongAnswer_2"," @question.WrongAnswer_3"};
 *@
         

@@ -15,7 +15,7 @@ namespace BulkyWeb_1._0.Models
         public string Question { get; set; }
         [Required]
         [DisplayName("Correct Answer:")]
-        public string Correst_Answer { get; set; }
+        public string Correct_Answer { get; set; }
         [Required]
         [DisplayName("Wrong Answer 1:")]
         public string WrongAnswer_1 { get; set; }
@@ -30,7 +30,7 @@ namespace BulkyWeb_1._0.Models
         public string[] GetShuffledAnswers()
         {
             // create an array of all the answer options
-            string[] answers = new string[] { Correst_Answer, WrongAnswer_1, WrongAnswer_2, WrongAnswer_3 };
+            string[] answers = new string[] { Correct_Answer, WrongAnswer_1, WrongAnswer_2, WrongAnswer_3 };
 
             // shuffle the answer options using Fisher-Yates shuffle
             Random rand = new Random();

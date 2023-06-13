@@ -32,7 +32,7 @@ namespace BulkyWeb_1._0.Migrations
             migrationBuilder.RenameColumn(
                 name: "Answer_1",
                 table: "QuestionList",
-                newName: "Correst_Answer");
+                newName: "Correct_Answer");
         }
 
         /// <inheritdoc />
@@ -54,7 +54,7 @@ namespace BulkyWeb_1._0.Migrations
                 newName: "Answer_2");
 
             migrationBuilder.RenameColumn(
-                name: "Correst_Answer",
+                name: "Correct_Answer",
                 table: "QuestionList",
                 newName: "Answer_1");
 

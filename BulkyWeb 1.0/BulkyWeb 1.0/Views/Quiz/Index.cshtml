@@ -55,7 +55,7 @@
                     
                 <td>@obj.Question_ID</td>
                 <td>@obj.Question</td>
-                <td>@obj.Correst_Answer</td>
+                <td>@obj.Correct_Answer</td>
                 <td>@obj.WrongAnswer_1</td>
                 <td>@obj.WrongAnswer_2</td>
                 <td>@obj.WrongAnswer_3</td>
@@ -84,7 +84,7 @@
                 <td>
                     @{
                         // Put the possible answers into an array and shuffle it
-                        var answers = new[] { obj.Correst_Answer, obj.WrongAnswer_1, obj.WrongAnswer_2, obj.WrongAnswer_3 };
+                        var answers = new[] { obj.Correct_Answer, obj.WrongAnswer_1, obj.WrongAnswer_2, obj.WrongAnswer_3 };
                         var rng = new Random();
                         int n = answers.Length;
                         while (n > 1)

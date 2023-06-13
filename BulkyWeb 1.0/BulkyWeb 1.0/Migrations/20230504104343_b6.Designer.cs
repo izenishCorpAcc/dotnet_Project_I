@@ -85,7 +85,7 @@ namespace BulkyWeb_1._0.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Question_ID"));
 
-                    b.Property<string>("Correst_Answer")
+                    b.Property<string>("Correct_Answer")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -113,7 +113,7 @@ namespace BulkyWeb_1._0.Migrations
                         new
                         {
                             Question_ID = 2,
-                            Correst_Answer = "King Charles III",
+                            Correct_Answer = "King Charles III",
                             Question = "King Of England",
                             WrongAnswer_1 = "King Charles II",
                             WrongAnswer_2 = "King Charles I",
@@ -122,7 +122,7 @@ namespace BulkyWeb_1._0.Migrations
                         new
                         {
                             Question_ID = 3,
-                            Correst_Answer = "50",
+                            Correct_Answer = "50",
                             Question = "How many states are there in USA",
                             WrongAnswer_1 = "51",
                             WrongAnswer_2 = "49",

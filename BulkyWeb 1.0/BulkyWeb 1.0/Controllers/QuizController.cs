@@ -6,6 +6,8 @@ using Microsoft.EntityFrameworkCore;
 using NuGet.Configuration;
 using System.Security.Claims;
 using System.Collections.Generic;
+using System.Linq;
+using Microsoft.AspNetCore.Identity;
 
 namespace BulkyWeb_1._0.Controllers
 {
@@ -14,10 +16,14 @@ namespace BulkyWeb_1._0.Controllers
     {
         
         private readonly ApplicationDbContext _db;
-        public QuizController(ApplicationDbContext db)
+        private readonly UserManager<ApplicationUser> _userManager;
+
+        public QuizController(ApplicationDbContext db, UserManager<ApplicationUser> userManager)
         {
             _db = db;
+            _userManager = userManager;
         }
+
         [Authorize(Roles = "admin")]
 
         public IActionResult Index()
@@ -35,7 +41,7 @@ namespace BulkyWeb_1._0.Controllers
 
         public IActionResult QuizCreate(Prasna obj)
         {
-            var a = obj.Correst_Answer;
+            var a = obj.Correct_Answer;
             var b = obj.WrongAnswer_1;
             var c = obj.WrongAnswer_2;
             var d = obj.WrongAnswer_3;
@@ -142,14 +148,48 @@ namespace BulkyWeb_1._0.Controllers
             return View(questions);
         }
 
+
+        //public IActionResult Results()
+        //{
+
+        //        var list = _db.QuizResults.Include("Prasna").ToList();
+        //        return View(list);
+
+        //}
+
+        public IActionResult Report()
+        {
+            var query = from user in _db.Users
+                        join quizResult in _db.QuizResults on user.Id equals quizResult.User_ID into quizResultGroup
+                        from result in quizResultGroup.DefaultIfEmpty()
+                        join question in _db.Prasna on result.Question_ID equals question.Question_ID into questionGroup
+                        from questionResult in questionGroup.DefaultIfEmpty()
+                        select new QuizReportViewModel
+                        {
+                            UserId = user.Id,
+                            Name = user.Name,
+                            UserName = user.UserName,
+                            Question = questionResult != null ? questionResult.Question : null,
+                            Correct_Answer = questionResult != null ? questionResult.Correct_Answer : null,
+                            Answer = result != null ? result.Answer : null,
+                            IsAnswerCorrect = (questionResult.Correct_Answer == result.Answer)
+                        };
+
+            var resultList = query.ToList();
+
+            return View(resultList);
+        }
+
+
+
         //public IActionResult R()
         //{
         //    List<QuizResult> qResult = _db.QuizResults.Select(x=> new()
         //    {
         //        QuizResult_ID=x.QuizResult_ID,
-                
+
         //    }
-                
+
         //        ).ToList();
         //    foreach (var question in questions)
         //    {

@@ -24,7 +24,7 @@ namespace BulkyWeb_1._0.Migrations
 
             migrationBuilder.InsertData(
                 table: "QuestionList",
-                columns: new[] { "Question_ID", "Correst_Answer", "Question", "WrongAnswer_1", "WrongAnswer_2", "WrongAnswer_3" },
+                columns: new[] { "Question_ID", "Correct_Answer", "Question", "WrongAnswer_1", "WrongAnswer_2", "WrongAnswer_3" },
                 values: new object[,]
                 {
                     { 2, "King Charles III", "King Of England", "King Charles II", "King Charles I", "King Charles IV" },
@@ -47,7 +47,7 @@ namespace BulkyWeb_1._0.Migrations
 
             migrationBuilder.InsertData(
                 table: "QuestionList",
-                columns: new[] { "Question_ID", "Correst_Answer", "Question", "WrongAnswer_1", "WrongAnswer_2", "WrongAnswer_3" },
+                columns: new[] { "Question_ID", "Correct_Answer", "Question", "WrongAnswer_1", "WrongAnswer_2", "WrongAnswer_3" },
                 values: new object[,]
                 {
                     { -2, "50", "How many states are there in USA", "51", "49", "52" },

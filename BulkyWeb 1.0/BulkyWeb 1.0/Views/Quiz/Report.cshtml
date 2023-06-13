@@ -1,0 +1,58 @@
+﻿@model List<QuizReportViewModel>
+<h1>Quiz Report</h1>
+
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        text-align: left;
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #f2f2f2;
+        color: #696969;
+    }
+</style>
+
+<table>
+    <thead>
+        <tr>
+            <th>User ID</th>
+            <th>Name</th>
+            <th>Username</th>
+            <th>Question</th>
+            <th>Answer</th>
+            <th>Conclusion</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td style="font-size: 10px;">@item.UserId</td>
+                <td>@item.Name</td>
+                <td>@item.UserName</td>
+                <td>@item.Question</td>
+                <td>@item.Answer</td>
+                <td class="@((item.IsAnswerCorrect) ? "correct-answer" : "incorrect-answer")">
+                    @if (item.IsAnswerCorrect)
+                    {
+                        <span class="correct-answer" style="color: green;">Correct</span>
+                    }
+                    else
+                    {
+                        <span class="incorrect-answer" style="color: red;">Incorrect</span>
+                    }
+                </td>
+
+
+
+            </tr>
+        }
+    </tbody>
+</table>

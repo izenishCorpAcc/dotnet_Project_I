@@ -22,7 +22,7 @@ namespace BulkyWeb_1._0.Migrations
                     Question_ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Question = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Correst_Answer = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Correct_Answer = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     WrongAnswer_1 = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     WrongAnswer_2 = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     WrongAnswer_3 = table.Column<string>(type: "nvarchar(max)", nullable: false)
@@ -52,7 +52,7 @@ namespace BulkyWeb_1._0.Migrations
                 {
                     Question_ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Correst_Answer = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Correct_Answer = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Question = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     WrongAnswer_1 = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     WrongAnswer_2 = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -72,7 +72,7 @@ namespace BulkyWeb_1._0.Migrations
 
             migrationBuilder.InsertData(
                 table: "QuestionList",
-                columns: new[] { "Question_ID", "Correst_Answer", "Question", "WrongAnswer_1", "WrongAnswer_2", "WrongAnswer_3" },
+                columns: new[] { "Question_ID", "Correct_Answer", "Question", "WrongAnswer_1", "WrongAnswer_2", "WrongAnswer_3" },
                 values: new object[,]
                 {
                     { 2, "King Charles III", "King Of England", "King Charles II", "King Charles I", "King Charles IV" },
